@@ -1,0 +1,44 @@
+function setupFilterTable(divId) {
+    const div = document.getElementById(divId);
+    if (!div) {
+        console.error(`Div com ID '${divId}' não encontrada.`);
+        return;
+    }
+
+    const input = div.querySelector("input[type='text']");
+    const clearButton = div.querySelector(".clear-button");
+    const table = div.querySelector("table");
+    const rows = table.getElementsByTagName("tr");
+
+    // Função para filtrar a tabela com base na pesquisa
+    function filterTable() {
+        const filter = input.value.toUpperCase();
+
+        for (let i = 1; i < rows.length; i++) {
+            let shouldDisplay = false;
+
+            for (let j = 0; j < rows[i].cells.length; j++) {
+                const cell = rows[i].cells[j];
+                const text = cell.textContent || cell.innerText;
+
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    shouldDisplay = true;
+                    break;
+                }
+            }
+
+            rows[i].style.display = shouldDisplay ? "" : "none";
+        }
+    }
+
+    input.addEventListener("input", filterTable);
+
+    // Função para limpar a pesquisa e reexibir todas as linhas
+    clearButton.addEventListener("click", function () {
+        input.value = "";
+        filterTable();
+    });
+}
+
+// Chame a função com o ID da div desejada
+setupFilterTable("conteudoSupervisores");

@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>POLYBALAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo_polybalas.ico">
+</head>
+
+<body>
+    <header>
+        <h1>GEOLOCALIZAÇÃO POLYBALAS</h1>
+    </header>
+    <nav>
+        <a href="#" id="btnInicioNav"><b>Inicio</b></a>
+        <a href="#" id="btnRoteirizacao"><b>Roteiro</b></a>
+        <a href="#" id="btnAgendaGestores"><b>Agendas</b></a>
+        <a href="#" id="btnMapaClientes"><b>Mapa</b></a>
+        <a href="#" id="btndivisao"><b>Equipe</b></a>
+        <a href="https://wa.me/message/LL3NLMNAPYGOI1"><b>WhatsApp</b></a>
+        <a href="mailto:arthur.nobrega@polybalas.com.br"><b>E-mail</b></a>
+    </nav>
+
+    <div class="container" id="container"></div>
+    <div id="Inicio" class="InicioNav">
+        <h2 align="center">Bem-vindo ao Portal de Apoio aos Funcionários Polybalas</h2>
+        <p>Nós valorizamos o trabalho que você realiza diariamente como parte da equipe Polybalas. Este portal foi
+            projetado especialmente para oferecer suporte e facilitar sua jornada enquanto
+            você atende nossos clientes com dedicação e profissionalismo. Aqui estão algumas informações importantes
+            para aproveitar ao máximo este recurso:</p>
+
+        <h3>Menu de Navegação:</h3>
+        <p>O menu de navegação acima fornece acesso rápido às ferramentas e informações essenciais para sua função.
+            Utilize os links para acessar áreas como Roteirização, Agendas, Mapa de
+            Clientes e muito mais. Se precisar entrar em contato conosco ou solicitar assistência, você encontrará os
+            links para "WhatsApp" e "E-mail" na parte superior.</p>
+
+        <h3>Formulário de Roteirização de Cliente:</h3>
+        <p>Este é o seu ponto de partida para planejar suas visitas aos clientes. Preencha os campos com cuidado,
+            fornecendo informações precisas, como códigos de clientes, roteiros, datas de
+            visita e detalhes de alteração de roteiro, se necessário. Seja minucioso, pois isso ajuda a manter nossa
+            operação eficiente.</p>
+
+        <h3>Formulário de Agenda Gestores:</h3>
+        <p>Gestores, este formulário é sua ferramenta para organizar agendas e recursos para nossas equipes externas.
+            Insira detalhes como seu nome, placa do veículo, semana e mês desejados.
+            Agende visitas para cada dia da semana, especificando cidades e observações importantes.</p>
+
+        <h3>Mapa de Clientes Polybalas:</h3>
+        <p>Explore nosso mapa interativo para visualizar a localização de nossos clientes. Isso pode ser útil para
+            planejar rotas eficientes e entender a distribuição geográfica de nossa base de
+            clientes.</p>
+
+        <h3>Dicas para Eficiência:</h3>
+        <p>Lembre-se de que a precisão e a clareza das informações inseridas nos formulários são cruciais. Utilize os
+            botões "Enviar" e "Limpar Campos" com responsabilidade. Se precisar de ajuda
+            ou tiver alguma dúvida, não hesite em nos contatar. Estamos aqui para apoiá-lo em todas as etapas.</p>
+
+        <p>A equipe da Polybalas reconhece o trabalho árduo que você realiza no campo e está comprometida em tornar sua
+            experiência o mais tranquila possível. Este portal é uma extensão de nosso
+            compromisso em oferecer as ferramentas necessárias para que você possa desempenhar sua função com
+            eficiência.</p>
+
+        <p>Agradecemos por sua dedicação contínua e pelo papel fundamental que você desempenha em nossa operação. A
+            Polybalas está ao seu lado para garantir o sucesso de nossos clientes e da
+            empresa como um todo.</p>
+    </div>
+
+
+    <div id="divisaoForm" class="formulario" style="display: none;" align="center">
+        <button id="btnGerentes">Gerentes</button>
+        <button id="btnSupervisores">Supervisores</button>
+        <button id="btnVendedores">Vendedores</button>
+        <button id="btnRotas">Rotas</button>
+
+        <div id="conteudoGerentes" class="conteudo" style="display: none;">
+            <b>Pesquisar:</b>
+            <input type="text" id="search" placeholder="Digite sua pesquisa...">
+            <table align="center">
+                <tr>
+                    <td t="s" id="sjs-A1" v="PASTA"><b>PASTA</b></td>
+                    <td t="s" id="sjs-B1" v="COD"><b>COD</td></b>
+                    <td t="s" id="sjs-C1" v="NOME"><b>NOME</b></td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A2" v="A">A</td>
+                    <td t="n" id="sjs-B2" v="2">2</td>
+                    <td t="s" id="sjs-C2" v=" SALEZIO MEDEIROS" xml:space="preserve"> SALEZIO MEDEIROS</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A3" v="C">C</td>
+                    <td t="n" id="sjs-B3" v="4">4</td>
+                    <td t="s" id="sjs-C3" v=" JEFFERSON BARBOSA" xml:space="preserve"> JEFFERSON BARBOSA</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A4" v="B">B</td>
+                    <td t="n" id="sjs-B4" v="3">3</td>
+                    <td t="s" id="sjs-C4" v=" CLAUDIO CASTRO" xml:space="preserve"> CLAUDIO CASTRO</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A5" v="D">D</td>
+                    <td t="n" id="sjs-B5" v="5">5</td>
+                    <td t="s" id="sjs-C5" v=" JOSENILDO GUEDES" xml:space="preserve"> JOSENILDO GUEDES</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A6" v="E">E</td>
+                    <td t="n" id="sjs-B6" v="10">10</td>
+                    <td t="s" id="sjs-C6" v=" MEIRIANE ROLIM" xml:space="preserve"> MEIRIANE ROLIM</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A7" v="F">F</td>
+                    <td t="n" id="sjs-B7" v="11">11</td>
+                    <td t="s" id="sjs-C7" v=" ATACADO" xml:space="preserve"> ATACADO</td>
+                </tr>
+            </table>
+            <script src="pesquisa"></script>
+        </div>
+        <div id="conteudoSupervisores" class="conteudo" style="display: none;">
+            <b>Pesquisar:</b>
+            <input type="text" id="search" placeholder="Digite sua pesquisa...">
+            <table align="center">
+                <tr>
+                    <td t="s" id="sjs-A1" v="PASTA"><b>PASTA</b></td>
+                    <td t="s" id="sjs-B1" v="REGIÃO"><b>REGIÃO</b></td>
+                    <td t="s" id="sjs-C1" v="COD"><b>COD</b></td>
+                    <td t="s" id="sjs-D1" v="NOME"><b>NOME</b></td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A2" v="A">A</td>
+                    <td t="s" id="sjs-B2" v="ST">ST</td>
+                    <td t="n" id="sjs-C2" v="48">48</td>
+                    <td t="s" id="sjs-D2" v="MATEUS SILVA">MATEUS SILVA</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A3" v="A">A</td>
+                    <td t="s" id="sjs-B3" v="JP-P">JP-P</td>
+                    <td t="n" id="sjs-C3" v="44">44</td>
+                    <td t="s" id="sjs-D3" v="SALEZIO MEDEIROS">SALEZIO MEDEIROS</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A4" v="A">A</td>
+                    <td t="s" id="sjs-B4" v="JP">JP</td>
+                    <td t="n" id="sjs-C4" v="42">42</td>
+                    <td t="s" id="sjs-D4" v="SANDRA NASCIMENTO">SANDRA NASCIMENTO</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A5" v="A">A</td>
+                    <td t="s" id="sjs-B5" v="CG">CG</td>
+                    <td t="n" id="sjs-C5" v="46">46</td>
+                    <td t="s" id="sjs-D5" v="ROSIMARY TAVARES">ROSIMARY TAVARES</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A6" v="B">B</td>
+                    <td t="s" id="sjs-B6" v="JP-P">JP-P</td>
+                    <td t="n" id="sjs-C6" v="63">63</td>
+                    <td t="s" id="sjs-D6" v="CLAUDIO CASTRO">CLAUDIO CASTRO</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A7" v="B">B</td>
+                    <td t="s" id="sjs-B7" v="CG">CG</td>
+                    <td t="n" id="sjs-C7" v="59">59</td>
+                    <td t="s" id="sjs-D7" v="EWERTON LACERDA">EWERTON LACERDA</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A8" v="B">B</td>
+                    <td t="s" id="sjs-B8" v="ST">ST</td>
+                    <td t="n" id="sjs-C8" v="57">57</td>
+                    <td t="s" id="sjs-D8" v="ALMIVAN ALMEIDA">ALMIVAN ALMEIDA</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A9" v="B">B</td>
+                    <td t="s" id="sjs-B9" v="JP">JP</td>
+                    <td t="n" id="sjs-C9" v="61">61</td>
+                    <td t="s" id="sjs-D9" v="EMILIA RODRIGUES">EMILIA RODRIGUES</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A10" v="B">B</td>
+                    <td t="s" id="sjs-B10" v="ST">ST</td>
+                    <td t="n" id="sjs-C10" v="77">77</td>
+                    <td t="s" id="sjs-D10" v="JOAO ELIAS">JOAO ELIAS</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A11" v="C">C</td>
+                    <td t="s" id="sjs-B11" v="JP-P">JP-P</td>
+                    <td t="n" id="sjs-C11" v="54">54</td>
+                    <td t="s" id="sjs-D11" v="ANTONIO JR">ANTONIO JR</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A12" v="C">C</td>
+                    <td t="s" id="sjs-B12" v="ST">ST</td>
+                    <td t="n" id="sjs-C12" v="53">53</td>
+                    <td t="s" id="sjs-D12" v="JOSE LUCIANO">JOSE LUCIANO</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A13" v="C">C</td>
+                    <td t="s" id="sjs-B13" v="CG">CG</td>
+                    <td t="n" id="sjs-C13" v="52">52</td>
+                    <td t="s" id="sjs-D13" v="TONY STEFESON">TONY STEFESON</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A14" v="C">C</td>
+                    <td t="s" id="sjs-B14" v="JP">JP</td>
+                    <td t="n" id="sjs-C14" v="73">73</td>
+                    <td t="s" id="sjs-D14" v="ANA ROSA">ANA ROSA</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A15" v="C">C</td>
+                    <td t="s" id="sjs-B15" v="FLEX">FLEX</td>
+                    <td t="n" id="sjs-C15" v="50">50</td>
+                    <td t="s" id="sjs-D15" v="MARCIO FREIRE">MARCIO FREIRE</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A16" v="D">D</td>
+                    <td t="s" id="sjs-B16" v="ST">ST</td>
+                    <td t="n" id="sjs-C16" v="58">58</td>
+                    <td t="s" id="sjs-D16" v="MARLON MACIEL">MARLON MACIEL</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A17" v="D">D</td>
+                    <td t="s" id="sjs-B17" v="CG">CG</td>
+                    <td t="n" id="sjs-C17" v="60">60</td>
+                    <td t="s" id="sjs-D17" v="RUBISMARK CARVALHO">RUBISMARK CARVALHO</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A18" v="D">D</td>
+                    <td t="s" id="sjs-B18" v="JP">JP</td>
+                    <td t="n" id="sjs-C18" v="62">62</td>
+                    <td t="s" id="sjs-D18" v="CARLOS JUNIOR">CARLOS JUNIOR</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A19" v="D">D</td>
+                    <td t="s" id="sjs-B19" v="JP-P">JP-P</td>
+                    <td t="n" id="sjs-C19" v="64">64</td>
+                    <td t="s" id="sjs-D19" v="JOSENILDO GUEDES">JOSENILDO GUEDES</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A20" v="E">E</td>
+                    <td t="s" id="sjs-B20" v="ST">ST</td>
+                    <td t="n" id="sjs-C20" v="70">70</td>
+                    <td t="s" id="sjs-D20" v="EMANUEL JUNIOR">EMANUEL JUNIOR</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A21" v="E">E</td>
+                    <td t="s" id="sjs-B21" v="JP-P">JP-P</td>
+                    <td t="n" id="sjs-C21" v="72">72</td>
+                    <td t="s" id="sjs-D21" v="ALINE MONTEIRO">ALINE MONTEIRO</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A22" v="E">E</td>
+                    <td t="s" id="sjs-B22" v="CG">CG</td>
+                    <td t="n" id="sjs-C22" v="69">69</td>
+                    <td t="s" id="sjs-D22" v="MEIRIANE ROLIM">MEIRIANE ROLIM</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A23" v="E">E</td>
+                    <td t="s" id="sjs-B23" v="JP">JP</td>
+                    <td t="n" id="sjs-C23" v="71">71</td>
+                    <td t="s" id="sjs-D23" v="ALINE MONTEIRO">ALINE MONTEIRO</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A24" v="F">F</td>
+                    <td t="s" id="sjs-B24" v="PB">PB</td>
+                    <td t="n" id="sjs-C24" v="75">75</td>
+                    <td t="s" id="sjs-D24" v="CARLOS HENRIQUE">CARLOS HENRIQUE</td>
+                </tr>
+                <tr>
+                    <td t="s" id="sjs-A25" v="G">G</td>
+                    <td t="s" id="sjs-B25" v="PB">PB</td>
+                    <td t="n" id="sjs-C25" v="76">76</td>
+                    <td t="s" id="sjs-D25" v="LUCIO PARREIRA">LUCIO PARREIRA</td>
+                </tr>
+            </table>
+            <script src="pesquisar"></script>
+        </div>
+        <div id="conteudoVendedores" class="conteudo" style="display: none;">
+            <b>Pesquisar:</b>
+            <input type="text" id="search" placeholder="Digite sua pesquisa...">
+            <table align="center">
+                <tr>
+                    <th>RCA</th>
+                    <th>PASTA</th>
+                    <th>ROTA</th>
+                    <th>NOME</th>
+                </tr>
+                <tr>
+                    <td>321</td>
+                    <td>A</td>
+                    <td>BJ-01</td>
+                    <td>MARLON SILVA</td>
+                </tr>
+                <tr>
+                    <td>493</td>
+                    <td>A</td>
+                    <td>BJ-02</td>
+                    <td>MONICA BARBOSA</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>A</td>
+                    <td>BJ-03</td>
+                    <td> FERNANDO SILVA</td>
+                </tr>
+                <tr>
+                    <td>456</td>
+                    <td>A</td>
+                    <td>BJ-04</td>
+                    <td>GERALDO MARINHO</td>
+                </tr>
+                <tr>
+                    <td>333</td>
+                    <td>A</td>
+                    <td>BJ-05</td>
+                    <td>JOSE DJAELSON</td>
+                </tr>
+                <tr>
+                    <td>126</td>
+                    <td>A</td>
+                    <td>BJ-06</td>
+                    <td>VALTER SILVA</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>A</td>
+                    <td>BJ-07</td>
+                    <td>WALKER GUEDES</td>
+                </tr>
+                <tr>
+                    <td>353</td>
+                    <td>A</td>
+                    <td>BJ-08</td>
+                    <td>LEANDRO ELIAS</td>
+                </tr>
+                <tr>
+                    <td>356</td>
+                    <td>A</td>
+                    <td>BJ-09</td>
+                    <td>MARINALDO SILVA</td>
+                </tr>
+                <tr>
+                    <td>261</td>
+                    <td>A</td>
+                    <td>CG-02</td>
+                    <td>EVA VILMA</td>
+                </tr>
+                <tr>
+                    <td>423</td>
+                    <td>A</td>
+                    <td>CG-04</td>
+                    <td>AYLSON AMERICO</td>
+                </tr>
+                <tr>
+                    <td>511</td>
+                    <td>A</td>
+                    <td>CG-05</td>
+                    <td>IVAN MOREIRA</td>
+                </tr>
+                <tr>
+                    <td>51</td>
+                    <td>A</td>
+                    <td>CG-ATACADO</td>
+                    <td>MARTINHO DE LIMA</td>
+                </tr>
+                <tr>
+                    <td>137</td>
+                    <td>A</td>
+                    <td>CG-P-01</td>
+                    <td>MICHEL FERREIRA</td>
+                </tr>
+                <tr>
+                    <td>145</td>
+                    <td>A</td>
+                    <td>JP-01</td>
+                    <td>JOAO BATISTA</td>
+                </tr>
+                <tr>
+                    <td>153</td>
+                    <td>A</td>
+                    <td>JP-02</td>
+                    <td>DAVID SILVA</td>
+                </tr>
+                <tr>
+                    <td>458</td>
+                    <td>A</td>
+                    <td>JP-03</td>
+                    <td>ELIAS DE LIMA</td>
+                </tr>
+                <tr>
+                    <td>350</td>
+                    <td>A</td>
+                    <td>JP-04</td>
+                    <td>IDELTRUDES MEDEIROS NASCIMENTO</td>
+                </tr>
+                <tr>
+                    <td>143</td>
+                    <td>A</td>
+                    <td>JP-05</td>
+                    <td>CARILDO OLIVEIRA</td>
+                </tr>
+                <tr>
+                    <td>439</td>
+                    <td>A</td>
+                    <td>JP-06</td>
+                    <td>ROMARIO ALVEZ</td>
+                </tr>
+                <tr>
+                    <td>316</td>
+                    <td>A</td>
+                    <td>JP-07</td>
+                    <td>LUIZ CARLOS JUNIOR</td>
+                </tr>
+                <tr>
+                    <td>393</td>
+                    <td>A</td>
+                    <td>JP-P-01</td>
+                    <td>OZINETE SILVA</td>
+                </tr>
+                <tr>
+                    <td>140</td>
+                    <td>A</td>
+                    <td>JP-P-02</td>
+                    <td>TALES LINS</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>A</td>
+                    <td>JP-P-04</td>
+                    <td>ROSANA ALVES</td>
+                </tr>
+                <tr>
+                    <td>396</td>
+                    <td>A</td>
+                    <td>JP-P-04</td>
+                    <td>JOAPSON CARDOSO</td>
+                </tr>
+                <tr>
+                    <td>139</td>
+                    <td>A</td>
+                    <td>JP-P-05</td>
+                    <td>EDSON SOUSA</td>
+                </tr>
+                <tr>
+                    <td>480</td>
+                    <td>A</td>
+                    <td>JP-P-06</td>
+                    <td>JOCELIO ANDRADE</td>
+                </tr>
+                <tr>
+                    <td>62</td>
+                    <td>A</td>
+                    <td>JP-P-10</td>
+                    <td>IRIS MOURA</td>
+                </tr>
+                <tr>
+                    <td>362</td>
+                    <td>A</td>
+                    <td>JP-P-13</td>
+                    <td>MARCIA MOUSSINHO DA SILVA</td>
+                </tr>
+                <tr>
+                    <td>426</td>
+                    <td>A</td>
+                    <td>ST-01</td>
+                    <td>RAFAEL LUCINDO</td>
+                </tr>
+                <tr>
+                    <td>385</td>
+                    <td>A</td>
+                    <td>ST-02</td>
+                    <td>PABLO OLIVEIRA</td>
+                </tr>
+                <tr>
+                    <td>90</td>
+                    <td>A</td>
+                    <td>ST-02</td>
+                    <td>DANIELA GONSALVES</td>
+                </tr>
+                <tr>
+                    <td>136</td>
+                    <td>A</td>
+                    <td>ST-03</td>
+                    <td>CLAUDENILDO SILVA</td>
+                </tr>
+                <tr>
+                    <td>304</td>
+                    <td>A</td>
+                    <td>ST-04</td>
+                    <td>ABNER CAIQUE (JACKSON PROV.)</td>
+                </tr>
+                <tr>
+                    <td>392</td>
+                    <td>A</td>
+                    <td>ST-05</td>
+                    <td>NALBERT COUTINHO</td>
+                </tr>
+                <tr>
+                    <td>451</td>
+                    <td>A</td>
+                    <td>ST-06</td>
+                    <td>JUSCELIO SANTOS</td>
+                </tr>
+                <tr>
+                    <td>88</td>
+                    <td>A</td>
+                    <td>ST-07</td>
+                    <td>RUMMENIGGE SILVA</td>
+                </tr>
+                <tr>
+                    <td>121</td>
+                    <td>A</td>
+                    <td>ST-08</td>
+                    <td>LUCENILDO SOUZA</td>
+                </tr>
+                <tr>
+                    <td>372</td>
+                    <td>A</td>
+                    <td>ST-09</td>
+                    <td>JACIONE QUEIROGA</td>
+                </tr>
+                <tr>
+                    <td>364</td>
+                    <td>A</td>
+                    <td>ST-10</td>
+                    <td>ALESSANDRA MARTINS</td>
+                </tr>
+                <tr>
+                    <td>463</td>
+                    <td>A</td>
+                    <td>ST-11</td>
+                    <td>JACKSON MANGUEIRA</td>
+                </tr>
+                <tr>
+                    <td>520</td>
+                    <td>A</td>
+                    <td>ST-12</td>
+                    <td>BRUNO MENDES</td>
+                </tr>
+                <tr>
+                    <td>429</td>
+                    <td>B</td>
+                    <td>BJ-01</td>
+                    <td>JOSE CARLOS COUTINHO</td>
+                </tr>
+                <tr>
+                    <td>413</td>
+                    <td>B</td>
+                    <td>BJ-02</td>
+                    <td>PAULO SOUTO</td>
+                </tr>
+                <tr>
+                    <td>138</td>
+                    <td>B</td>
+                    <td>BJ-03</td>
+                    <td>BRUNNO THIAGO</td>
+                </tr>
+                <tr>
+                    <td>96</td>
+                    <td>B</td>
+                    <td>BJ-04</td>
+                    <td>EUDEGLAN SILVA</td>
+                </tr>
+                <tr>
+                    <td>131</td>
+                    <td>B</td>
+                    <td>BJ-05</td>
+                    <td>JOAFRAN SANTOS</td>
+                </tr>
+                <tr>
+                    <td>128</td>
+                    <td>B</td>
+                    <td>BJ-06</td>
+                    <td>JOSE VALBER</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>B</td>
+                    <td>BJ-07</td>
+                    <td>LEANDRO GOMES DE SOUZA</td>
+                </tr>
+                <tr>
+                    <td>259</td>
+                    <td>B</td>
+                    <td>BJ-08</td>
+                    <td>JAILSON SANTOS</td>
+                </tr>
+                <tr>
+                    <td>434</td>
+                    <td>B</td>
+                    <td>BJ-09</td>
+                    <td>JEFFERSON SILVA</td>
+                </tr>
+                <tr>
+                    <td>97</td>
+                    <td>B</td>
+                    <td>CG-02</td>
+                    <td>KESSIA RAMOS</td>
+                </tr>
+                <tr>
+                    <td>546</td>
+                    <td>B</td>
+                    <td>CG-04</td>
+                    <td>EDILANE PEREIRA</td>
+                </tr>
+                <tr>
+                    <td>428</td>
+                    <td>B</td>
+                    <td>CG-ATACADO</td>
+                    <td>MARTINHO DE LIMA</td>
+                </tr>
+                <tr>
+                    <td>402</td>
+                    <td>B</td>
+                    <td>CG-P-01</td>
+                    <td>EDUARDO FIGUEIREDO</td>
+                </tr>
+                <tr>
+                    <td>482</td>
+                    <td>B</td>
+                    <td>CG-P-02</td>
+                    <td>MARCOS ANTONIO FILHO</td>
+                </tr>
+                <tr>
+                    <td>282</td>
+                    <td>B</td>
+                    <td>JP-01</td>
+                    <td>ALDO SILVA</td>
+                </tr>
+                <tr>
+                    <td>443</td>
+                    <td>B</td>
+                    <td>JP-02</td>
+                    <td>JONES SILVA</td>
+                </tr>
+                <tr>
+                    <td>344</td>
+                    <td>B</td>
+                    <td>JP-03</td>
+                    <td>LEANDRO VALENTIN</td>
+                </tr>
+                <tr>
+                    <td>135</td>
+                    <td>B</td>
+                    <td>JP-04</td>
+                    <td>LEONARDO DIAS</td>
+                </tr>
+                <tr>
+                    <td>272</td>
+                    <td>B</td>
+                    <td>JP-05</td>
+                    <td>MICHAEL OLIVEIRA</td>
+                </tr>
+                <tr>
+                    <td>142</td>
+                    <td>B</td>
+                    <td>JP-06</td>
+                    <td>JOAO VICTOR</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>B</td>
+                    <td>JP-07</td>
+                    <td>LEONARDO DIAS PROVISORIO</td>
+                </tr>
+                <tr>
+                    <td>147</td>
+                    <td>B</td>
+                    <td>JP-P-01</td>
+                    <td>OZINETE SILVA</td>
+                </tr>
+                <tr>
+                    <td>78</td>
+                    <td>B</td>
+                    <td>JP-P-02</td>
+                    <td>LUZINETE LINS</td>
+                </tr>
+                <tr>
+                    <td>524</td>
+                    <td>B</td>
+                    <td>JP-P-02</td>
+                    <td>TALES LINS</td>
+                </tr>
+                <tr>
+                    <td>109</td>
+                    <td>B</td>
+                    <td>JP-P-03</td>
+                    <td>KESIA CHAGAS</td>
+                </tr>
+                <tr>
+                    <td>141</td>
+                    <td>B</td>
+                    <td>JP-P-04</td>
+                    <td>RONALDO DAMACENA</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>B</td>
+                    <td>JP-P-05</td>
+                    <td>DORACI</td>
+                </tr>
+                <tr>
+                    <td>486</td>
+                    <td>B</td>
+                    <td>JP-P-05</td>
+                    <td>EDSON SOUSA</td>
+                </tr>
+                <tr>
+                    <td>144</td>
+                    <td>B</td>
+                    <td>JP-P-06</td>
+                    <td>JOCELIO ANDRADE</td>
+                </tr>
+                <tr>
+                    <td>337</td>
+                    <td>B</td>
+                    <td>JP-P-07</td>
+                    <td>JEAN CARLOS</td>
+                </tr>
+                <tr>
+                    <td>108</td>
+                    <td>B</td>
+                    <td>JP-P-08</td>
+                    <td>HUGO LACERDA</td>
+                </tr>
+                <tr>
+                    <td>470</td>
+                    <td>B</td>
+                    <td>JP-P-13</td>
+                    <td>MARCIA MOUSSINHO DA SILVA</td>
+                </tr>
+                <tr>
+                    <td>82</td>
+                    <td>B</td>
+                    <td>ST-01</td>
+                    <td>NATANIEL SOUSA</td>
+                </tr>
+                <tr>
+                    <td>496</td>
+                    <td>B</td>
+                    <td>ST-02</td>
+                    <td>MANOEL MESSIAS</td>
+                </tr>
+                <tr>
+                    <td>574</td>
+                    <td>B</td>
+                    <td>ST-02</td>
+                    <td>RB ARILENE MONTEIRO RIBEIRO</td>
+                </tr>
+                <tr>
+                    <td>433</td>
+                    <td>B</td>
+                    <td>ST-03</td>
+                    <td>CRISTIANO PEREIRA</td>
+                </tr>
+                <tr>
+                    <td>390</td>
+                    <td>B</td>
+                    <td>ST-04</td>
+                    <td>INDOMARCOS KAILANO</td>
+                </tr>
+                <tr>
+                    <td>573</td>
+                    <td>B</td>
+                    <td>ST-04-MV</td>
+                    <td>JOSE IVAN DANTAS FLORENTINO</td>
+                </tr>
+                <tr>
+                    <td>120</td>
+                    <td>B</td>
+                    <td>ST-05</td>
+                    <td>MARCOS VINICIUS</td>
+                </tr>
+                <tr>
+                    <td>86</td>
+                    <td>B</td>
+                    <td>ST-06</td>
+                    <td>LUCELIO SILVA</td>
+                </tr>
+                <tr>
+                    <td>452</td>
+                    <td>B</td>
+                    <td>ST-07</td>
+                    <td>LUDMILLA KASSIANA DANTAS</td>
+                </tr>
+                <tr>
+                    <td>125</td>
+                    <td>B</td>
+                    <td>ST-08</td>
+                    <td>AIRTON SENA FURTADO DE QUEIROGA</td>
+                </tr>
+                <tr>
+                    <td>575</td>
+                    <td>B</td>
+                    <td>ST-08-MV</td>
+                    <td>KALINE QUEIROGA DA SILVA</td>
+                </tr>
+                <tr>
+                    <td>453</td>
+                    <td>B</td>
+                    <td>ST-09</td>
+                    <td>HENRIQUE JORGE</td>
+                </tr>
+                <tr>
+                    <td>146</td>
+                    <td>B</td>
+                    <td>ST-10</td>
+                    <td>RENATA GONCALVES</td>
+                </tr>
+                <tr>
+                    <td>319</td>
+                    <td>B</td>
+                    <td>ST-11</td>
+                    <td>VAGNA MANGUEIRA</td>
+                </tr>
+                <tr>
+                    <td>46</td>
+                    <td>B</td>
+                    <td>ST-12</td>
+                    <td>FRANCISCO LAURENTINO</td>
+                </tr>
+                <tr>
+                    <td>357</td>
+                    <td>C</td>
+                    <td>BJ-01</td>
+                    <td>ALEX SILVA</td>
+                </tr>
+                <tr>
+                    <td>399</td>
+                    <td>C</td>
+                    <td>BJ-02</td>
+                    <td>MILKA MEDEIROS</td>
+                </tr>
+                <tr>
+                    <td>425</td>
+                    <td>C</td>
+                    <td>BJ-03</td>
+                    <td>RAFAEL ANDRADE</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>C</td>
+                    <td>BJ-04</td>
+                    <td>ANDRE SILVA</td>
+                </tr>
+                <tr>
+                    <td>422</td>
+                    <td>C</td>
+                    <td>BJ-05</td>
+                    <td>RAFAEL CAVALCANTI</td>
+                </tr>
+                <tr>
+                    <td>495</td>
+                    <td>C</td>
+                    <td>BJ-06</td>
+                    <td>MANOEL RIBEIRO</td>
+                </tr>
+                <tr>
+                    <td>283</td>
+                    <td>C</td>
+                    <td>BJ-07</td>
+                    <td>SEVERINO LIMA</td>
+                </tr>
+                <tr>
+                    <td>309</td>
+                    <td>C</td>
+                    <td>BJ-08</td>
+                    <td>IVANETE ALVES</td>
+                </tr>
+                <tr>
+                    <td>484</td>
+                    <td>C</td>
+                    <td>BJ-09</td>
+                    <td>MARIA EULINA</td>
+                </tr>
+                <tr>
+                    <td>483</td>
+                    <td>C</td>
+                    <td>CG-02</td>
+                    <td>DIONE SILVA</td>
+                </tr>
+                <tr>
+                    <td>295</td>
+                    <td>C</td>
+                    <td>CG-04</td>
+                    <td>EDMILSON ANDRADE</td>
+                </tr>
+                <tr>
+                    <td>536</td>
+                    <td>C</td>
+                    <td>CG-05</td>
+                    <td>HELDA SILVA</td>
+                </tr>
+                <tr>
+                    <td>442</td>
+                    <td>C</td>
+                    <td>CG-ATACADO</td>
+                    <td>CHRISTIANO TORRES</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>C</td>
+                    <td>CG-P-01</td>
+                    <td>EMERSON LINS</td>
+                </tr>
+                <tr>
+                    <td>505</td>
+                    <td>C</td>
+                    <td>CG-P-02</td>
+                    <td>RENATO SANTOS</td>
+                </tr>
+                <tr>
+                    <td>341</td>
+                    <td>C</td>
+                    <td>JP-01</td>
+                    <td>HEMANUEL SOUZA</td>
+                </tr>
+                <tr>
+                    <td>119</td>
+                    <td>C</td>
+                    <td>JP-02</td>
+                    <td>VALDEMAR MONTEIRO</td>
+                </tr>
+                <tr>
+                    <td>485</td>
+                    <td>C</td>
+                    <td>JP-03</td>
+                    <td>MARCELO RODRIGUES</td>
+                </tr>
+                <tr>
+                    <td>98</td>
+                    <td>C</td>
+                    <td>JP-04</td>
+                    <td>IVONEIDE SANTOS</td>
+                </tr>
+                <tr>
+                    <td>337</td>
+                    <td>C</td>
+                    <td>JP-05</td>
+                    <td>JEAN CARLOS</td>
+                </tr>
+                <tr>
+                    <td>130</td>
+                    <td>C</td>
+                    <td>JP-06</td>
+                    <td>JEFFERSON SILVA</td>
+                </tr>
+                <tr>
+                    <td>461</td>
+                    <td>C</td>
+                    <td>JP-07</td>
+                    <td>BRUNO MEDEIROS</td>
+                </tr>
+                <tr>
+                    <td>94</td>
+                    <td>C</td>
+                    <td>JP-P-01</td>
+                    <td>EDUARDO FIGUEIREDO</td>
+                </tr>
+                <tr>
+                    <td>337</td>
+                    <td>C</td>
+                    <td>JP-P-02</td>
+                    <td>JEAN CARLOS</td>
+                </tr>
+                <tr>
+                    <td>52</td>
+                    <td>C</td>
+                    <td>JP-P-03</td>
+                    <td>FRANCISCO JUSCELINO</td>
+                </tr>
+                <tr>
+                    <td>147</td>
+                    <td>C</td>
+                    <td>JP-P-04</td>
+                    <td>OZINETE SILVA</td>
+                </tr>
+                <tr>
+                    <td>311</td>
+                    <td>C</td>
+                    <td>JP-P-05</td>
+                    <td>LUIZ GONZAGA</td>
+                </tr>
+                <tr>
+                    <td>66</td>
+                    <td>C</td>
+                    <td>JP-P-06</td>
+                    <td>JOAO VICTOR</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>C</td>
+                    <td>JP-P-07</td>
+                    <td>AGRICIO PEREIRA</td>
+                </tr>
+                <tr>
+                    <td>143</td>
+                    <td>C</td>
+                    <td>JP-P-08</td>
+                    <td>JOCELIO ANDRADE</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>C</td>
+                    <td>JP-P-10</td>
+                    <td>DORACI</td>
+                </tr>
+                <tr>
+                    <td>417</td>
+                    <td>C</td>
+                    <td>JP-P-11</td>
+                    <td>JACKSON MANGUEIRA</td>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td>C</td>
+                    <td>JP-P-12</td>
+                    <td>MARCIO EDERSON</td>
+                </tr>
+                <tr>
+                    <td>130</td>
+                    <td>C</td>
+                    <td>JP-P-13</td>
+                    <td>JEFFERSON SILVA</td>
+                </tr>
+                <tr>
+                    <td>529</td>
+                    <td>C</td>
+                    <td>ST-01</td>
+                    <td>JHONATA ALVES</td>
+                </tr>
+                <tr>
+                    <td>317</td>
+                    <td>C</td>
+                    <td>ST-02</td>
+                    <td>ALEX OLIVEIRA</td>
+                </tr>
+                <tr>
+                    <td>529</td>
+                    <td>C</td>
+                    <td>ST-03</td>
+                    <td>JHONATA ALVES</td>
+                </tr>
+                <tr>
+                    <td>141</td>
+                    <td>C</td>
+                    <td>ST-04</td>
+                    <td>RONALDO DAMACENA</td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td>C</td>
+                    <td>ST-05</td>
+                    <td>SAULO MARCELO</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>C</td>
+                    <td>ST-06</td>
+                    <td>LEONARDO DIAS PROVISORIO</td>
+                </tr>
+                <tr>
+                    <td>532</td>
+                    <td>C</td>
+                    <td>ST-07</td>
+                    <td>MICHAEL OLIVEIRA</td>
+                </tr>
+                <tr>
+                    <td>145</td>
+                    <td>C</td>
+                    <td>ST-08</td>
+                    <td>RAPHAEL SOARES</td>
+                </tr>
+                <tr>
+                    <td>454</td>
+                    <td>C</td>
+                    <td>ST-09</td>
+                    <td>EDUARDO FIGUEIREDO</td>
+                </tr>
+                <tr>
+                    <td>452</td>
+                    <td>C</td>
+                    <td>ST-10</td>
+                    <td>LUDMILLA KASSIANA DANTAS</td>
+                </tr>
+                <tr>
+                    <td>49</td>
+                    <td>C</td>
+                    <td>ST-11</td>
+                    <td>BRUNO MEDEIROS</td>
+                </tr>
+                <tr>
+                    <td>64</td>
+                    <td>C</td>
+                    <td>ST-12</td>
+                    <td>EMANUEL MORAIS</td>
+                </tr>
+            </table>
+            <script src="vendedor"></script>
+        </div>
+        <div id="conteudoRotas" class="conteudo" style="display: none;">
+            <b>Pesquisar:</b>
+            <input type="text" id="search" placeholder="Digite sua pesquisa...">
+            <table align="center">
+                <tr>
+                    <th>Cidade</th>
+                    <th>Região</th>
+                    <th>Rota</th>
+                </tr>
+                <tr>
+                    <td>Assuncao</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Cacimbas</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Desterro</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Juazeirinho</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Junco do Serido</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Livramento</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Santa Luzia</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose do Sabugi</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Taperoa</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Tenorio</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Varzea</td>
+                    <td>Sertão</td>
+                    <td>ST-01</td>
+                </tr>
+                <tr>
+                    <td>Areia de Baraunas</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Cacimba de Areia</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Mae d'agua</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Passagem</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Patos</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Quixaba</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Salgadinho</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose de Espinharas</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose do Bonfim</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Sao Mamede</td>
+                    <td>Sertão</td>
+                    <td>ST-02</td>
+                </tr>
+                <tr>
+                    <td>Agua Branca</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>IMACULADA</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>Juru</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>Manaira</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>Matureia</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>Princesa Isabel</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose de Princesa</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>Tavares</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>Teixeira</td>
+                    <td>Sertão</td>
+                    <td>ST-03</td>
+                </tr>
+                <tr>
+                    <td>Aguiar</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Catingueira</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Emas</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Igaracy</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Itaporanga</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Nova Olinda</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Olho D agua</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Pedra Branca</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Pianco</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Santa Teresinha</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Santana dos Garrotes</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose de Caiana</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Serra Grande</td>
+                    <td>Sertão</td>
+                    <td>ST-04</td>
+                </tr>
+                <tr>
+                    <td>Cajazeirinhas</td>
+                    <td>Sertão</td>
+                    <td>ST-05</td>
+                </tr>
+                <tr>
+                    <td>Condado</td>
+                    <td>Sertão</td>
+                    <td>ST-05</td>
+                </tr>
+                <tr>
+                    <td>Coremas</td>
+                    <td>Sertão</td>
+                    <td>ST-05</td>
+                </tr>
+                <tr>
+                    <td>Malta</td>
+                    <td>Sertão</td>
+                    <td>ST-05</td>
+                </tr>
+                <tr>
+                    <td>Pombal</td>
+                    <td>Sertão</td>
+                    <td>ST-05</td>
+                </tr>
+                <tr>
+                    <td>Sao Bentinho</td>
+                    <td>Sertão</td>
+                    <td>ST-05</td>
+                </tr>
+                <tr>
+                    <td>Sao Domingos de Pombal</td>
+                    <td>Sertão</td>
+                    <td>ST-05</td>
+                </tr>
+                <tr>
+                    <td>Vista Serrana</td>
+                    <td>Sertão</td>
+                    <td>ST-05</td>
+                </tr>
+                <tr>
+                    <td>Belem do Brejo do Cruz</td>
+                    <td>Sertão</td>
+                    <td>ST-06</td>
+                </tr>
+                <tr>
+                    <td>Brejo do Cruz</td>
+                    <td>Sertão</td>
+                    <td>ST-06</td>
+                </tr>
+                <tr>
+                    <td>Paulista</td>
+                    <td>Sertão</td>
+                    <td>ST-06</td>
+                </tr>
+                <tr>
+                    <td>Sao Bento</td>
+                    <td>Sertão</td>
+                    <td>ST-06</td>
+                </tr>
+                <tr>
+                    <td>Bom Sucesso</td>
+                    <td>Sertão</td>
+                    <td>ST-07</td>
+                </tr>
+                <tr>
+                    <td>Brejo dos Santos</td>
+                    <td>Sertão</td>
+                    <td>ST-07</td>
+                </tr>
+                <tr>
+                    <td>Catole do Rocha</td>
+                    <td>Sertão</td>
+                    <td>ST-07</td>
+                </tr>
+                <tr>
+                    <td>Jerico</td>
+                    <td>Sertão</td>
+                    <td>ST-07</td>
+                </tr>
+                <tr>
+                    <td>Lagoa</td>
+                    <td>Sertão</td>
+                    <td>ST-07</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td>Sertão</td>
+                    <td>ST-07</td>
+                </tr>
+                <tr>
+                    <td>Riacho dos Cavalos</td>
+                    <td>Sertão</td>
+                    <td>ST-07</td>
+                </tr>
+                <tr>
+                    <td>Sousa</td>
+                    <td>Sertão</td>
+                    <td>ST-08</td>
+                </tr>
+                <tr>
+                    <td>Aparecida</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Bernardino Batista</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Joca Claudino</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Lastro</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Poco Dantas</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Poco de Jose de Moura</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Santa Cruz</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Santa Helena</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Sao Francisco</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Sao Joao do Rio do Peixe</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Triunfo</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Uiraúna</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Vieiropolis</td>
+                    <td>Sertão</td>
+                    <td>ST-09</td>
+                </tr>
+                <tr>
+                    <td>Cajazeiras</td>
+                    <td>Sertão</td>
+                    <td>ST-10</td>
+                </tr>
+                <tr>
+                    <td>Boa Ventura</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Bonito de Santa Fe</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Conceicao</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Curral Velho</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Diamante</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Ibiara</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Monte Horebe</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Santa InEs</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Santana de Mangueira</td>
+                    <td>Sertão</td>
+                    <td>ST-11</td>
+                </tr>
+                <tr>
+                    <td>Bom Jesus</td>
+                    <td>Sertão</td>
+                    <td>ST-12</td>
+                </tr>
+                <tr>
+                    <td>Cachoeira dos indios</td>
+                    <td>Sertão</td>
+                    <td>ST-12</td>
+                </tr>
+                <tr>
+                    <td>Carrapateira</td>
+                    <td>Sertão</td>
+                    <td>ST-12</td>
+                </tr>
+                <tr>
+                    <td>Marizopolis</td>
+                    <td>Sertão</td>
+                    <td>ST-12</td>
+                </tr>
+                <tr>
+                    <td>Nazarezinho</td>
+                    <td>Sertão</td>
+                    <td>ST-12</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose da Lagoa Tapada</td>
+                    <td>Sertão</td>
+                    <td>ST-12</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose de Piranhas</td>
+                    <td>Sertão</td>
+                    <td>ST-12</td>
+                </tr>
+                <tr>
+                    <td>Inga</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Itabaiana</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Itatuba</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Juripiranga</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Mogeiro</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Pedras de Fogo</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Pilar</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>RiachAo do Bacamarte</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Salgado de Sao Felix</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose dos Ramos</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Sao Miguel de Taipu</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Serra Redonda</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-01</td>
+                </tr>
+                <tr>
+                    <td>Alagoa Grande</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-08</td>
+                </tr>
+                <tr>
+                    <td>Alagoinha</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-08</td>
+                </tr>
+                <tr>
+                    <td>Cuitegi</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-08</td>
+                </tr>
+                <tr>
+                    <td>Guarabira</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-08</td>
+                </tr>
+                <tr>
+                    <td>Juarez Tavora</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-08</td>
+                </tr>
+                <tr>
+                    <td>Piloes</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-08</td>
+                </tr>
+                <tr>
+                    <td>Piloezinhos</td>
+                    <td>João Pessoa</td>
+                    <td>BJ-08</td>
+                </tr>
+                <tr>
+                    <td>Baia da Traicao</td>
+                    <td>João Pessoa</td>
+                    <td>JP-01</td>
+                </tr>
+                <tr>
+                    <td>Capim</td>
+                    <td>João Pessoa</td>
+                    <td>JP-01</td>
+                </tr>
+                <tr>
+                    <td>Cuite de Mamanguape</td>
+                    <td>João Pessoa</td>
+                    <td>JP-01</td>
+                </tr>
+                <tr>
+                    <td>Itapororoca</td>
+                    <td>João Pessoa</td>
+                    <td>JP-01</td>
+                </tr>
+                <tr>
+                    <td>Mamanguape</td>
+                    <td>João Pessoa</td>
+                    <td>JP-01</td>
+                </tr>
+                <tr>
+                    <td>Marcacao</td>
+                    <td>João Pessoa</td>
+                    <td>JP-01</td>
+                </tr>
+                <tr>
+                    <td>Mataraca</td>
+                    <td>João Pessoa</td>
+                    <td>JP-01</td>
+                </tr>
+                <tr>
+                    <td>Rio Tinto</td>
+                    <td>João Pessoa</td>
+                    <td>JP-01</td>
+                </tr>
+                <tr>
+                    <td>Caldas Brandao</td>
+                    <td>João Pessoa</td>
+                    <td>JP-02</td>
+                </tr>
+                <tr>
+                    <td>Gurinhem</td>
+                    <td>João Pessoa</td>
+                    <td>JP-02</td>
+                </tr>
+                <tr>
+                    <td>Mari</td>
+                    <td>João Pessoa</td>
+                    <td>JP-02</td>
+                </tr>
+                <tr>
+                    <td>Mulungu</td>
+                    <td>João Pessoa</td>
+                    <td>JP-02</td>
+                </tr>
+                <tr>
+                    <td>Riachao do Poco</td>
+                    <td>João Pessoa</td>
+                    <td>JP-02</td>
+                </tr>
+                <tr>
+                    <td>Sape</td>
+                    <td>João Pessoa</td>
+                    <td>JP-02</td>
+                </tr>
+                <tr>
+                    <td>Sobrado</td>
+                    <td>João Pessoa</td>
+                    <td>JP-02</td>
+                </tr>
+                <tr>
+                    <td>Alhandra</td>
+                    <td>João Pessoa</td>
+                    <td>JP-03</td>
+                </tr>
+                <tr>
+                    <td>Bayeux</td>
+                    <td>João Pessoa</td>
+                    <td>JP-03</td>
+                </tr>
+                <tr>
+                    <td>Cruz do Espirito Santo</td>
+                    <td>João Pessoa</td>
+                    <td>JP-03</td>
+                </tr>
+                <tr>
+                    <td>Santa Rita</td>
+                    <td>João Pessoa</td>
+                    <td>JP-03</td>
+                </tr>
+                <tr>
+                    <td>Caapora</td>
+                    <td>João Pessoa</td>
+                    <td>JP-04</td>
+                </tr>
+                <tr>
+                    <td>Conde</td>
+                    <td>João Pessoa</td>
+                    <td>JP-04</td>
+                </tr>
+                <tr>
+                    <td>Pitimbu</td>
+                    <td>João Pessoa</td>
+                    <td>JP-04</td>
+                </tr>
+                <tr>
+                    <td>Joao Pessoa</td>
+                    <td>João Pessoa</td>
+                    <td>JP-04</td>
+                </tr>
+                <tr>
+                    <td>Cabedelo</td>
+                    <td>João Pessoa</td>
+                    <td>JP-05</td>
+                </tr>
+                <tr>
+                    <td>Joao Pessoa</td>
+                    <td>João Pessoa</td>
+                    <td>JP-05</td>
+                </tr>
+                <tr>
+                    <td>Lucena</td>
+                    <td>João Pessoa</td>
+                    <td>JP-05</td>
+                </tr>
+                <tr>
+                    <td>Joao Pessoa</td>
+                    <td>João Pessoa</td>
+                    <td>JP-06</td>
+                </tr>
+                <tr>
+                    <td>Joao Pessoa</td>
+                    <td>João Pessoa</td>
+                    <td>JP-07</td>
+                </tr>
+                <tr>
+                    <td>Campina Grande</td>
+                    <td>Campina</td>
+                    <td>CG-02</td>
+                </tr>
+                <tr>
+                    <td>Alcantil</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Aroeiras</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Barra de Santana</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Boqueirao</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Cabaceiras</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Caturite</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Fagundes</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Gado Bravo</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Massaranduba</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Natuba</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Queimadas</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Santa Cecilia</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Umbuzeiro</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Riacho de Santo Antonio</td>
+                    <td>Brejo</td>
+                    <td>BJ-02</td>
+                </tr>
+                <tr>
+                    <td>Amparo</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Camalau</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Caraubas</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Congo</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Coxixola</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Monteiro</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Ouro Velho</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Parari</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Prata</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Sao Joao do Tigre</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Sao Jose dos Cordeiros</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Sao Sebastiao do Umbuzeiro</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Serra Branca</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Sume</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Zabele</td>
+                    <td>Brejo</td>
+                    <td>BJ-03</td>
+                </tr>
+                <tr>
+                    <td>Boa Vista</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Cubati</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Gurjao</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Nova Palmeira</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Olivedos</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Pedra Lavrada</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Santo Andre</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Sao Domingos do Cariri</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Sao Joao do Cariri</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Serido</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Soledade</td>
+                    <td>Brejo</td>
+                    <td>BJ-04</td>
+                </tr>
+                <tr>
+                    <td>Barauna</td>
+                    <td>Brejo</td>
+                    <td>BJ-05</td>
+                </tr>
+                <tr>
+                    <td>Barra de Santa Rosa</td>
+                    <td>Brejo</td>
+                    <td>BJ-05</td>
+                </tr>
+                <tr>
+                    <td>Cuite</td>
+                    <td>Brejo</td>
+                    <td>BJ-05</td>
+                </tr>
+                <tr>
+                    <td>Damiao</td>
+                    <td>Brejo</td>
+                    <td>BJ-05</td>
+                </tr>
+                <tr>
+                    <td>Frei Martinho</td>
+                    <td>Brejo</td>
+                    <td>BJ-05</td>
+                </tr>
+                <tr>
+                    <td>Nova Floresta</td>
+                    <td>Brejo</td>
+                    <td>BJ-05</td>
+                </tr>
+                <tr>
+                    <td>Picui</td>
+                    <td>Brejo</td>
+                    <td>BJ-05</td>
+                </tr>
+                <tr>
+                    <td>SossEgo</td>
+                    <td>Brejo</td>
+                    <td>BJ-05</td>
+                </tr>
+                <tr>
+                    <td>Alagoa Nova</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Arara</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Areia</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Areial</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Casserengue</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Esperanca</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Lagoa Seca</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Montadas</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Pocinhos</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Puxinana</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Remigio</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Sao Sebastiao de Lagoa de Roca</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Algodao de Jandaira</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Matinhas</td>
+                    <td>Brejo</td>
+                    <td>BJ-06</td>
+                </tr>
+                <tr>
+                    <td>Araruna</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>Bananeiras</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>Borborema</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>Cacimba de Dentro</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>Dona Ines</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>RiachAo</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>Serraria</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>Solanea</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>Tacima</td>
+                    <td>Brejo</td>
+                    <td>BJ-07</td>
+                </tr>
+                <tr>
+                    <td>Belem</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Caicara</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Curral de Cima</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Duas Estradas</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Jacarau</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Lagoa de Dentro</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Logradouro</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Pedro Regis</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Serra da Raiz</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Sertaozinho</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Aracagi</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+                <tr>
+                    <td>Pirpirituba</td>
+                    <td>Brejo</td>
+                    <td>BJ-09</td>
+                </tr>
+            </table>
+            <script src="rotas"></script>
+        </div>
+    </div>
+
+    <div id="roteirizacaoForm" class="formulario" style="display: none;" align="center">
+        <ul align="left">
+            <h3 align="center">Observações para Preenchimento do Formulário</h3>
+            <li>
+                <strong>Código do Cliente:</strong> Insira o código do cliente de forma precisa. Certifique-se de que
+                seja um número válido e único para cada cliente.
+            </li>
+            <li>
+                <strong>Razão Social do Cliente:</strong> Digite a razão social do cliente exatamente como está
+                registrada nos nossos registros. Use letras maiúsculas e números, e evite caracteres especiais.
+            </li>
+            <li>
+                <strong>Código do Vendedor:</strong> Coloque o código do vendedor responsável pela visita ao cliente.
+                Este código deve ser único para cada vendedor.
+            </li>
+            <li>
+                <strong>Vendedor:</strong> Insira o nome completo do vendedor que realizará a visita. Utilize letras
+                maiúsculas para o nome.
+            </li>
+            <li>
+                <strong>Rota:</strong> Informe a rota que o vendedor seguirá para visitar o cliente. Utilize letras
+                maiúsculas e números.
+            </li>
+            <li>
+                <strong>Dia de Visita:</strong> Selecione a data em que está agendada a visita ao cliente.
+            </li>
+            <li>
+                <strong>Modelo de Visita:</strong> Escolha o modelo de visita apropriado, seja "1/3", "2/4" ou
+                "Semanal", com base na programação.
+            </li>
+        </ul>
+        <p>
+        <ul align="left">certifique-se de preencher todos os campos corretamente e de acordo com as orientações
+            fornecidas para garantir a precisão das informações registradas. Se houver
+            alguma alteração no roteiro planejado, adicione detalhes relevantes no campo "Alteração de Roteiro".
+            Obrigado!
+        </ul>
+        </p><br>
+        <hr>
+        <h2>Formulário de Roteirização de Cliente</h2>
+        <form action="https://api.sheetmonkey.io/form/rTkNnhGL1hdAiibJPj9jDn" method="post" id="formRoteirizacao">
+            <div class="form-item">
+                <label for="codigoCliente">Código do Cliente:</label>
+                <input type="number" id="codigoCliente" name="codigoCliente" placeholder="Código do cliente" min="1"
+                    max="999999" required>
+            </div>
+            <div class="form-item">
+                <label for="razaoSocial">Razão Social do Cliente:</label>
+                <input type="text" id="razaoSocial" name="razaoSocial" placeholder="Razão social"
+                    pattern="[A-Za-z0-9\- ]{10,45}" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="codigoVendedor">Código do Vendedor:</label>
+                <input type="number" id="codigoVendedor" name="codigoVendedor" placeholder="Código do vendedor" min="1"
+                    max="100000" required>
+            </div>
+            <div class="form-item">
+                <label for="nomeVendedor">Vendedor:</label>
+                <input type="text" id="nomeVendedor" name="nomeVendedor" placeholder="Nome do vendedor"
+                    pattern="[A-Za-z0-9\- ]{10,45}" minlength="10" maxlength="25" required
+                    oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="rotaVendedor">Rota:</label>
+                <input type="text" id="rotaVendedor" name="rotaVendedor" placeholder="Rota"
+                    pattern="[A-Za-z0-9\- ]{10,45}" minlength="5" maxlength="20" required
+                    oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="diaVisita">Dia de Visita:</label>
+                <input type="date" id="diaVisita" name="diaVisita" required>
+            </div>
+            <div class="form-item">
+                <label for="modeloVisita">Modelo de Visita:</label>
+                <div class="modelo-visita">
+                    <label for="visita1">1/3</label>
+                    <input type="radio" id="visita1" name="modeloVisita" value="1/3" required>
+                    <label for="visita2">2/4</label>
+                    <input type="radio" id="visita2" name="modeloVisita" value="2/4">
+                    <label for="visitaSemanal">Semanal</label>
+                    <input type="radio" id="visitaSemanal" name="modeloVisita" value="Semanal">
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="observacaoalteracao">Alteração de Roteiro:</label>
+                <input type="text" id="observacaoalteracao" name="observacaoalteracao" placeholder="Observação"
+                    pattern="[A-Za-z0-9\-]{10,45}" minlength="5" maxlength="45"
+                    oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="red-button">Enviar</button>
+                <button type="reset" class="red-button">Limpar Campos</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="agendaGestoresForm" class="formulario" style="display: none;" align="center">
+        <h3>Observações para Preenchimento do Formulário</h3>
+
+        <li align="left">
+            <strong>Funcionário:</strong> Preencha seu nome completo no campo "Funcionário". Certifique-se de que esteja
+            escrito corretamente e contenha no mínimo 10 caracteres alfanuméricos.
+        </li>
+        <li align="left">
+            <strong>Placa do Veículo:</strong> Digite a placa do seu veículo no formato "XXX-XXXX", onde "X" representa
+            letras maiúsculas ou números. Este campo deve conter exatamente 8 caracteres.
+        </li>
+        <li align="left">
+            <strong>Semana:</strong> Insira o número da semana que corresponde à agenda que está sendo preenchida.
+            Certifique-se de que o número da semana seja um valor entre 1 e 30.000.
+        </li>
+        <li align="left">
+            <strong>Mês:</strong> Selecione o mês da agenda no campo "Mês". Isso é importante para a organização das
+            atividades.
+        </li>
+        <li align="left">
+            <strong>Dias da Semana:</strong> Preencha as datas e informações correspondentes para cada dia da semana, de
+            segunda-feira a sábado.
+        <li align="left">
+            <strong>Segunda-feira a Sábado:</strong> Para cada dia da semana, insira a data no formato correto e a
+            cidade onde as atividades serão realizadas. Também adicione qualquer observação relevante para aquele dia.
+        </li>
+        </li>
+        <li align="left">
+            <strong>Botões de Ação:</strong> Após preencher todas as informações, você pode clicar no botão "Enviar"
+            para enviar o formulário ou no botão "Limpar Campos" para limpar os campos preenchidos e recomeçar.
+        </li>
+        <p align="left"><b>Certifique-se de que todas as informações estão corretas e completas antes de enviar o
+                formulário. Se você tiver alguma dúvida durante o preenchimento, não hesite em entrar em contato com o
+                suporte para obter assistência.</b></p>
+        <p align="left"><b>Lembre-se de que este formulário é essencial para a organização da agenda de gestores,
+                portanto, preencha-o com precisão e atenção. Obrigado por sua colaboração!</b></p><br>
+        <hr>
+        <h2>Agenda Gestores</h2>
+        <form action="https://api.sheetmonkey.io/form/2rdiod4q9hmpN5WmLL4QCp" method="post" id="formAgenda">
+            <div class="form-item">
+                <label for="funcionario">Funcionário:</label>
+                <input type="text" id="funcionario" name="funcionario" placeholder="Seu nome completo"
+                    pattern="[A-Za-z0-9\-]{10,45}" minlength="10" maxlength="35" required
+                    oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="placaVeiculo">Placa do Veículo:</label>
+                <input type="text" id="placaVeiculo" name="placaVeiculo" class="uppercase-input"
+                    placeholder="Placa do veículo XXX-XXXX" pattern="[A-Za-z0-9]{3}-[A-Za-z0-9][0-9][A-Za-z0-9]{2}"
+                    minlength="8" maxlength="8" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="semanaAtual">Semana:</label>
+                <input type="number" id="semanaAtual" name="semanaAtual" placeholder="Semana" min="1" max="30000"
+                    required>
+            </div>
+            <div class="form-item">
+                <label for="mes">Mês:</label>
+                <input type="month" id="mes" name="mes" required>
+            </div>
+            <div class="form-item">
+                <label for="segunda">Segunda-feira:</label>
+                <input type="date" id="segunda" name="segunda" required>
+                <input type="text" id="cidadesegunda" name="cidadesegunda" placeholder="Cidade" minlength="10"
+                    maxlength="25" required oninput="this.value = this.value.toUpperCase()">
+                <input type="text" id="observacaoSegunda" name="observacaoSegunda" placeholder="Observação"
+                    minlength="5" maxlength="45" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="terca">Terça-feira:</label>
+                <input type="date" id="terca" name="terca" required>
+                <input type="text" id="cidadeTerca" name="cidadeTerca" placeholder="Cidade" minlength="10"
+                    maxlength="25" required oninput="this.value = this.value.toUpperCase()">
+                <input type="text" id="observacaoTerca" name="observacaoTerca" placeholder="Observação" minlength="5"
+                    maxlength="45" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="quarta">Quarta-feira:</label>
+                <input type="date" id="quarta" name="quarta" required>
+                <input type="text" id="cidadeQuarta" name="cidadeQuarta" placeholder="Cidade" minlength="3"
+                    maxlength="25" required oninput="this.value = this.value.toUpperCase()">
+                <input type="text" id="observacaoQuarta" name="observacaoQuarta" placeholder="Observação" minlength="5"
+                    maxlength="45" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="quinta">Quinta-feira:</label>
+                <input type="date" id="quinta" name="quinta" required>
+                <input type="text" id="cidadeQuinta" name="cidadeQuinta" placeholder="Cidade" minlength="3"
+                    maxlength="25" required oninput="this.value = this.value.toUpperCase()">
+                <input type="text" id="observacaoQuinta" name="observacaoQuinta" placeholder="Observação" minlength="5"
+                    maxlength="45" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="sexta">Sexta-feira:</label>
+                <input type="date" id="sexta" name="sexta" required>
+                <input type="text" id="cidadeSexta" name="cidadeSexta" placeholder="Cidade" minlength="3" maxlength="25"
+                    required oninput="this.value = this.value.toUpperCase()">
+                <input type="text" id="observacaoSexta" name="observacaoSexta" placeholder="Observação" minlength="5"
+                    maxlength="45" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-item">
+                <label for="sabado">Sábado:</label>
+                <input type="date" id="sabado" name="sabado" required>
+                <input type="text" id="cidadeSabado" name="cidadeSabado" placeholder="Cidade" minlength="3"
+                    maxlength="25" required oninput="this.value = this.value.toUpperCase()">
+                <input type="text" id="observacaoSabado" name="observacaoSabado" placeholder="Observação" minlength="5"
+                    maxlength="45" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="red-button">Enviar</button>
+                <button type="reset" class="red-button">Limpar Campos</button>
+            </div>
+        </form>
+    </div>
+    <div id="mapaClientesForm" class="formulario" style="display: none;" align="center">
+        <h2>Mapa Clientes Polybalas</h2>
+        <iframe src="https://www.google.com/maps/d/embed?mid=17C3M0zi1sgiVQFhyb85tmkNdBsQkAvc&ehbc=2E312F" width="100%"
+            height="550"></iframe>
+    </div>
+
+    <script src="mostrarForm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para a navegação */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    /* Centraliza os itens horizontalmente */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Quebra em várias linhas em telas pequenas */
+}
+
+nav li {
+    margin: 0 5px;
+    /* Espaçamento de 5px entre os itens */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 4px;
+    /* Espaçamento de 2px em todos os lados do texto */
+    display: inline-block;
+    /* Impede que os links ocupem toda a largura disponível */
+    font-family: arial;
+    font-size: 19px;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 750px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+        /* Espaçamento vertical entre os itens */
+    }
+}
+
+header {
+    background-color: #8b0000;
+    display: flex;
+    flex-direction: column;
+    /* Empilhar elementos verticalmente */
+    justify-content: center;
+    /* Centralizar conteúdo verticalmente */
+    align-items: center;
+    /* Centralizar conteúdo horizontalmente */
+    width: 100%;
+    /* Largura é definida como 100% da largura da tela */
+    height: 150px;
+    box-sizing: border-box;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    /* Centralizar o texto */
+    font-family: arial black;
+}
+
+#texto {
+    font-size: 30px;
+    margin: 10px 0;
+    /* Adicionar espaço vertical entre o texto e a imagem */
+    font-family: Arial;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    display: none;
+    /* Oculta a div inicialmente */
+}
+
+#divisaoForm {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente no centro */
+    margin-top: 45px;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 15px;
+}
+
+button {
+    background-color: red;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.conteudo {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+#Inicio {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente no centro */
+    margin-top: 45px;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 15px;
+}
+
+#divisao {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente no centro */
+    margin-top: 45px;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: rgba(175, 174, 174, 0.4);
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 3px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#roteirizacaoForm.formulario {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente no centro */
+    margin-top: 45px;
+    color: #ffffff;
+}
+
+.form-item {
+    margin-bottom: 5px;
+}
+
+.form-item label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-item input,
+.form-item textarea {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, .8);
+    border-radius: 5px;
+}
+
+.modelo-visita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 80%;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Estilo para o formulário de Agenda Gestores */
+#agendaGestoresForm.formulario {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente no centro */
+    margin-top: 45px;
+    color: #ffffff;
+}
+
+.form-item {
+    margin-bottom: 5px;
+}
+
+.form-item label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-item input,
+.form-item textarea {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, .8);
+    border-radius: 5px;
+}
+
+.modelo-visita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 80%;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Estilo para o formulário de Mapa Clientes Polybalas */
+#mapaClientesForm.formulario {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente no centro */
+    margin-top: 45px;
+    color: #ffffff;
+}
+
+.mapa {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    /* Adjust the height as needed */
+    background-color: rgba(0, 0, 0, .8);
+    /* Background color for clarity */
+}
